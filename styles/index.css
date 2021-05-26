@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.container{
+    height: 100%;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+#mainSquare{
+    padding: 1rem;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    /* making the squares align 3 x3 */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.square{
+    /* square take 100% width/height of the grid element */
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
